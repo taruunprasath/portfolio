@@ -75,7 +75,11 @@ a:hover {
   overflow: hidden;
   transform: scale(1.03);
 }
-
+section > #profile,#about,#experience,#projects,#contact {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -466,4 +470,62 @@ footer p {
 }
 ::selection{
   background-color: aqua;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+#welcome-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background-image: url("/assets/bg.jpg");
+  background-size: cover;
+}
+
+#welcome-message {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-image: url("./assets/giphy.gif");
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+}
+
+#enter-btn {
+  margin-top: 20px;
+  margin-left: 290px;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  text-decoration: none;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+#enter-btn:hover{
+  color: #fff;
+  opacity: 3;
+  background: var(--clr);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px var(--clr);
+}
+#enter-btn::before{
+  content: '';
+  position: absolute;
+  background: #27782c;
 }
