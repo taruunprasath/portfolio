@@ -496,6 +496,7 @@ body::-webkit-scrollbar{
   font-size: 50px;
   text-align: center;
   margin-bottom: 20px;
+  margin-left: 20px;
   background-image: url("./assets/giphy.gif");
   background-position: center;
   color: transparent;
