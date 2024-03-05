@@ -83,6 +83,7 @@ nav {
 .image{
   border-radius: 100%;
   transition: all 1.5s ease-in-out;
+  animation: image 4s ease-in-out infinite;
 }
 .image:hover{
   cursor: pointer;
@@ -90,6 +91,17 @@ nav {
   filter: drop-shadow(0 0 10px #393939d3);
   overflow: hidden;
   transform: scale(1.03);
+}
+@keyframes image{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-0.8rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 section > #profile,#about,#experience,#projects,#contact {
   opacity: 0;
