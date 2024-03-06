@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
     <div class="welcome">
@@ -51,7 +52,16 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Taruun Prasath</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p2"><span class="auto-type"></span></p>
+        <script>
+          var typed= new Typed('.auto-type',{
+            strings:['Frontend Developer','Electrical Engineer'],
+            typeSpeed:60,
+            backSpeed:60,
+            backDelay:1000,
+            loop:true,
+          })
+        </script>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
