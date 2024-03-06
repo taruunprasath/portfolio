@@ -82,7 +82,7 @@ nav {
 }
 .image{
   border-radius: 100%;
-  transition: all 1.5s ease-in-out;
+  filter: drop-shadow(0 0 25px #8FAFE8);
   animation: image 4s ease-in-out infinite;
 }
 .image:hover{
